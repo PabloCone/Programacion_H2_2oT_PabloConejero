@@ -1,0 +1,161 @@
+/* Estilos generales para el cuerpo */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #304583;
+        }
+
+        /* Estilos para la barra de navegación */
+        nav {
+            background-color: #d68922;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex; /* Usamos flexbox para centrar los elementos */
+            justify-content: center; /* Centra los enlaces horizontalmente */
+            align-items: center; /* Alinea los elementos verticalmente */
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #7f8daf;
+            color: #f8f8f8;
+        }
+
+        /* Estilos para los formularios */
+        form {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="number"],
+        form input[type="password"],
+        form select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        form input[type="submit"] {
+            background-color: #28a745;  /* Color verde de fondo */
+            color: white;  /* Texto en blanco */
+            padding: 12px 25px;  /* Añadí un poco más de espacio en los laterales */
+            border: none;  /* Sin borde */
+            border-radius: 6px;  /* Bordes redondeados más suaves */
+            font-size: 16px;  /* Tamaño de fuente ligeramente más pequeño */
+            font-weight: bold;  /* Peso de la fuente más fuerte */
+            cursor: pointer;  /* Indicador de puntero para cuando se pase por encima */
+            transition: background-color 0.3s ease, transform 0.2s ease;  /* Transición para el color y el tamaño */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Sombra para darle un efecto de profundidad */
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #218838;  /* Color verde más oscuro al pasar el ratón */
+            transform: scale(1.05);  /* Efecto de agrandado al pasar el ratón */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);  /* Sombra más fuerte al pasar el ratón */
+        }
+
+        form input[type="submit"]:active {
+            background-color: #1e7e34;  /* Aún más oscuro cuando se hace clic */
+            transform: scale(1);  /* Restablece el tamaño */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Sombra al hacer clic */
+        }
+
+        /* Estilos para las tablas */
+        table {
+            width: 100%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Centramos todo el contenido de la tabla */
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            vertical-align: middle; /* Asegura que el texto se alinee verticalmente al centro */
+        }
+        th {
+            background-color: #304583;
+            color: white;
+            font-size: 16px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #3380ff;
+        }
+
+        /* Estilos para los errores */
+        h2 {
+            color: #28a745;
+            text-align: center; /* Centra el mensaje de error */
+        }
+
+        /* Estilos para los errores */
+        h2 {
+            color: #28a745;
+        }
+
+        /* Títulos y encabezados */
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        /* Estilos para la lista */
+        ul {
+            list-style-type: none; /* Elimina los puntos de la lista */
+            padding: 0; /* Elimina el relleno por defecto */
+            text-align: center; /* Centra el texto dentro de los elementos de la lista */
+        }
+        button {
+        background-color: #28a745;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+
+        /* Contenedor del botón Añadir Tarea */
+        /* Contenedor del botón Cerrar Sesión */
+        .button-container {
+            display: flex;
+            justify-content: center;  /* Centra horizontalmente */
+        }
+        
+        /* Estilos para los mensajes de éxito o error */
+        .message {
+            font-size: 24px;           /* Aumenta el tamaño de la fuente */
+            font-weight: bold;         /* Pone el texto en negrita */
+            color: #28a745;            /* Cambia el color (puedes usar otro si prefieres) */
+            text-align: center;        /* Centra el texto */
+            margin-top: 20px;          /* Espaciado en la parte superior */
+        }
